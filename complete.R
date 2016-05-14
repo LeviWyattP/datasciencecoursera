@@ -3,13 +3,11 @@ complete <- function(directory, id = 1:332) {
   
   #first we are going to load the data
   df <- data.frame()
-  print(id)
-  
+
   # for each id
   for (i in id)
   {
-    
-    print(i)
+
     # form filename - then add padding 0's
     file_name <- as.character(i)
     while (nchar(file_name)<3)
